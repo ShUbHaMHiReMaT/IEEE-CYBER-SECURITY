@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Threat Lab - Modern Cybersecurity Training</title>
+    <meta name="description" content="Master cybersecurity with AI-powered simulations and IoT threat scenarios. Interactive training for all skill levels.">
+    <link rel="stylesheet" href="ieee.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/3fe73a4144.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <span class="logo-text">AI<span class="accent">Threat</span>Lab</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#simulations">Simulations</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button class="btn btn-secondary" id="toggleTheme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="btn btn-primary" onclick="window.location.href='sign-in.html'">Sign Up</button>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#simulations">Simulations</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="sign-in.html" class="btn btn-primary mobile-cta">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Master Cybersecurity with AI">Master Cybersecurity with AI</h1>
+            <p>Train with AI-powered cyber attack simulations and IoT security scenarios. Learn to identify, prevent, and mitigate modern threats in our interactive environment.</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-secondary">Take the Tour</button>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="count" data-target="50">0</span>+
+                    <span class="label">AI Attack Scenarios</span>
+                </div>
+                <div class="stat">
+                    <span class="count" data-target="25">0</span>+
+                    <span class="label">IoT Simulations</span>
+                </div>
+                <div class="stat">
+                    <span class="count" data-target="10000">0</span>+
+                    <span class="label">Certified Users</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="cyber-matrix" id="cyberMatrix"></div>
+            <div class="floating-elements">
+                <div class="floating-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="floating-icon"><i class="fas fa-wifi"></i></div>
+                <div class="floating-icon"><i class="fas fa-robot"></i></div>
+                <div class="floating-icon"><i class="fas fa-bug"></i></div>
+                <div class="floating-icon"><i class="fas fa-lock"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose AI Threat Lab?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI-Powered Training</h3>
+                <p>Our platform uses advanced AI to create realistic and adaptive cybersecurity scenarios that evolve as you learn.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3>IoT Threat Simulations</h3>
+                <p>Practice securing Internet of Things devices against the latest vulnerabilities and attack vectors.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Industry Certifications</h3>
+                <p>Earn recognized certifications that demonstrate your cybersecurity skills to potential employers.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Expert Community</h3>
+                <p>Connect with cybersecurity professionals and enthusiasts to share knowledge and solve challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Modules Section -->
+    <section id="training" class="training">
+        <h2 class="section-title">Training Modules</h2>
+        <div class="module-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="beginner">Beginners</button>
+            <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+            <button class="filter-btn" data-filter="advanced">Advanced</button>
+        </div>
+        <div class="modules-grid">
+            <div class="module-card" data-category="beginner">
+                <div class="module-progress">25% Complete</div>
+                <h3>Cybersecurity Fundamentals</h3>
+                <p>Learn the essential concepts and terminology of modern cybersecurity.</p>
+                <div class="module-meta">
+                    <span><i class="fas fa-clock"></i> 4 hours</span>
+                    <span><i class="fas fa-signal"></i> Beginner</span>
+                </div>
+                <button class="btn btn-secondary">Resume</button>
+            </div>
+            <div class="module-card" data-category="beginner">
+                <div class="module-progress">New</div>
+                <h3>IoT Security Basics</h3>
+                <p>Understand the unique security challenges of Internet of Things devices.</p>
+                <div class="module-meta">
+                    <span><i class="fas fa-clock"></i> 3 hours</span>
+                    <span><i class="fas fa-signal"></i> Beginner</span>
+                </div>
+                <button class="btn btn-primary">Start</button>
+            </div>
+            <div class="module-card" data-category="intermediate">
+                <div class="module-progress">New</div>
+                <h3>Network Penetration Testing</h3>
+                <p>Learn ethical hacking techniques to identify network vulnerabilities.</p>
+                <div class="module-meta">
+                    <span><i class="fas fa-clock"></i> 6 hours</span>
+                    <span><i class="fas fa-signal"></i> Intermediate</span>
+                </div>
+                <button class="btn btn-primary">Start</button>
+            </div>
+            <div class="module-card" data-category="advanced">
+                <div class="module-progress">New</div>
+                <h3>AI-Generated Attack Defense</h3>
+                <p>Counter sophisticated attacks created by artificial intelligence systems.</p>
+                <div class="module-meta">
+                    <span><i class="fas fa-clock"></i> 8 hours</span>
+                    <span><i class="fas fa-signal"></i> Advanced</span>
+                </div>
+                <button class="btn btn-primary">Start</button>
+            </div>
+            <div class="module-card" data-category="intermediate">
+                <div class="module-progress">New</div>
+                <h3>Smart Home Security</h3>
+                <p>Protect your connected home devices from unauthorized access and control.</p>
+                <div class="module-meta">
+                    <span><i class="fas fa-clock"></i> 5 hours</span>
+                    <span><i class="fas fa-signal"></i> Intermediate</span>
+                </div>
+                <button class="btn btn-primary">Start</button>
+            </div>
+            <div class="module-card" data-category="advanced">
+                <div class="module-progress">New</div>
+                <h3>Industrial IoT Security</h3>
+                <p>Secure critical infrastructure and industrial control systems from cyber attacks.</p>
+                <div class="module-meta">
+                    <span><i class="fas fa-clock"></i> 10 hours</span>
+                    <span><i class="fas fa-signal"></i> Advanced</span>
+                </div>
+                <button class="btn btn-primary">Start</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Simulations Section -->
+    <section id="simulations" class="simulations">
+        <h2 class="section-title">Live Threat Simulations</h2>
+        <p class="section-subtitle">Test your skills against realistic, AI-generated cyber attack scenarios</p>
+        
+        <div class="simulation-showcase">
+            <div class="simulation-details">
+                <h3>IoT Network Breach Simulation</h3>
+                <div class="simulation-meta">
+                    <span><i class="fas fa-signal"></i> Intermediate</span>
+                    <span><i class="fas fa-users"></i> 2,345 attempts</span>
+                    <span><i class="fas fa-trophy"></i> 43% success rate</span>
+                </div>
+                <p>Detect and defend against a sophisticated attack targeting vulnerable IoT devices on a home network. Identify entry points, stop lateral movement, and secure compromised devices.</p>
+                <div class="simulation-features">
+                    <div class="feature"><i class="fas fa-check"></i> Real-time feedback</div>
+                    <div class="feature"><i class="fas fa-check"></i> Multiple attack vectors</div>
+                    <div class="feature"><i class="fas fa-check"></i> Adaptive difficulty</div>
+                </div>
+                <button class="btn btn-primary">Launch Simulation</button>
+            </div>
+            <div class="simulation-preview">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn close"></span>
+                            <span class="term-btn minimize"></span>
+                            <span class="term-btn maximize"></span>
+                        </div>
+                        <div class="terminal-title">IoT Security Scanner</div>
+                    </div>
+                    <div class="terminal-body" id="terminalOutput">
+                        <p class="command">$ sudo ./scan_network.sh</p>
+                        <p class="output">Scanning network for IoT devices...</p>
+                        <p class="output">Found 7 devices:</p>
+                        <p class="output"> - Smart TV (192.168.1.101) - Firmware v2.1.5</p>
+                        <p class="output"> - Smart Speaker (192.168.1.102) - Firmware v3.0.2</p>
+                        <p class="output"> - Security Camera (192.168.1.103) - Firmware v1.8.0</p>
+                        <p class="output warning"> - VULNERABLE: Smart Thermostat (192.168.1.104) - Firmware v1.2.3</p>
+                        <p class="output"> - Smart Light Hub (192.168.1.105) - Firmware v5.1.2</p>
+                        <p class="output warning"> - VULNERABLE: Smart Lock (192.168.1.106) - Firmware v2.0.4</p>
+                        <p class="output"> - Router (192.168.1.1) - Firmware v9.2.1</p>
+                        <p class="command">$ ./analyze_vulnerabilities.sh</p>
+                        <p class="output">Analyzing vulnerabilities...</p>
+                        <p class="output error">ALERT: Detected unauthorized access attempt on Smart Thermostat</p>
+                        <p class="output">Source IP: 185.143.223.??</p>
+                        <p class="command">$ _</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="simulations-grid">
+            <div class="simulation-card">
+                <div class="difficulty"><span>Beginner</span></div>
+                <h3>Phishing Defense</h3>
+                <p>Learn to identify and respond to sophisticated AI-generated phishing attempts.</p>
+                <button class="btn btn-secondary">Try Simulation</button>
+            </div>
+            <div class="simulation-card">
+                <div class="difficulty"><span>Intermediate</span></div>
+                <h3>Ransomware Response</h3>
+                <p>Practice containing and remediating a ransomware attack in a corporate environment.</p>
+                <button class="btn btn-secondary">Try Simulation</button>
+            </div>
+            <div class="simulation-card">
+                <div class="difficulty"><span>Advanced</span></div>
+                <h3>Smart City Attack</h3>
+                <p>Defend critical infrastructure in a simulated smart city from coordinated attacks.</p>
+                <button class="btn btn-secondary">Try Simulation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <h2 class="section-title">Join Our Community</h2>
+        <div class="community-content">
+            <div class="community-info">
+                <p>Connect with cybersecurity professionals, share knowledge, and solve challenges together.</p>
+                <div class="community-stats">
+                    <div class="community-stat">
+                        <span class="count" data-target="15000">0</span>+
+                        <p>Active Members</p>
+                    </div>
+                    <div class="community-stat">
+                        <span class="count" data-target="200">0</span>+
+                        <p>Daily Discussions</p>
+                    </div>
+                    <div class="community-stat">
+                        <span class="count" data-target="50">0</span>+
+                        <p>Expert Mentors</p>
+                    </div>
+                </div>
+                <div class="community-features">
+                    <div class="comm-feature">
+                        <i class="fas fa-comments"></i>
+                        <span>Discussion Forums</span>
+                    </div>
+                    <div class="comm-feature">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Chat Support</span>
+                    </div>
+                    <div class="comm-feature">
+                        <i class="fas fa-user-shield"></i>
+                        <span>Mentorship</span>
+                    </div>
+                    <div class="comm-feature">
+                        <i class="fas fa-trophy"></i>
+                        <span>Weekly Challenges</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Join Community</button>
+            </div>
+            <div class="community-preview">
+                <div class="chat-interface">
+                    <div class="chat-header">
+                        <h3>Community Chat</h3>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message">
+                            <div class="message-avatar">JS</div>
+                            <div class="message-content">
+                                <div class="message-author">JaneSmith <span class="badge">Expert</span></div>
+                                <div class="message-text">Has anyone successfully configured the IDS to detect the new variant of the IoT botnet?</div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message-avatar">TC</div>
+                            <div class="message-content">
+                                <div class="message-author">TechCyber <span class="badge">Mentor</span></div>
+                                <div class="message-text">Yes, I've updated my signature database. Check out my guide in the resources section.</div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message-avatar">NN</div>
+                            <div class="message-content">
+                                <div class="message-author">NewbieNet</div>
+                                <div class="message-text">Thanks for sharing! I'm still learning about IDS configurations. Is there a beginner tutorial?</div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message-avatar">AI</div>
+                            <div class="message-content">
+                                <div class="message-author">AI Assistant <span class="badge">Bot</span></div>
+                                <div class="message-text">@NewbieNet I can help with that! Check module 3 of the "Network Security Basics" course for a detailed IDS tutorial.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type your message...">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <h2 class="section-title">Latest in Cybersecurity</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('https://source.unsplash.com/random/600x400/?cybersecurity')"></div>
+                <div class="news-content">
+                    <div class="news-tag">Threat Alert</div>
+                    <h3>New Vulnerability Affects Millions of IoT Devices</h3>
+                    <p>A critical security flaw has been discovered in popular smart home devices, potentially exposing...</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> May 15, 2023</span>
+                        <span><i class="fas fa-comment"></i> 24 comments</span>
+                    </div>
+                    <a href="#" class="btn btn-text">Read More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('https://source.unsplash.com/random/600x400/?hacker')"></div>
+                <div class="news-content">
+                    <div class="news-tag">Tutorial</div>
+                    <h3>Setting Up a Home Security Lab for IoT Testing</h3>
+                    <p>Learn how to create your own cybersecurity testing environment to practice securing IoT devices...</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> May 10, 2023</span>
+                        <span><i class="fas fa-comment"></i> 18 comments</span>
+                    </div>
+                    <a href="#" class="btn btn-text">Read More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('https://source.unsplash.com/random/600x400/?ai')"></div>
+                <div class="news-content">
+                    <div class="news-tag">AI Security</div>
+                    <h3>AI-Powered Attacks: The New Frontier in Cybersecurity</h3>
+                    <p>How artificial intelligence is being used by both attackers and defenders in the evolving...</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-calendar"></i> May 5, 2023</span>
+                        <span><i class="fas fa-comment"></i> 32 comments</span>
+                    </div>
+                    <a href="#" class="btn btn-text">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="center-btn">
+            <button class="btn btn-secondary">Browse All Articles</button>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Master Cybersecurity?</h2>
+            <p>Join thousands of professionals and start your journey to becoming a cybersecurity expert today.</p>
+            <button class="btn btn-primary">Get Started For Free</button>
+        </div>
+        <div class="cta-visual">
+            <div class="cta-grid"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">AI<span class="accent">Threat</span>Lab</span>
+                <p>Next-generation cybersecurity training platform</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="#">Training Modules</a></li>
+                        <li><a href="#">Simulations</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">For Teams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Mentorship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Get cybersecurity updates and tips</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Your email">
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 AI Threat Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="ieee.js"></script>
+</body>
+</html>
